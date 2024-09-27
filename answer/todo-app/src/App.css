@@ -1,0 +1,165 @@
+/* Overall Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Task Table Styles */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+  background-color: #6200ea;
+  color: white;
+  font-weight: bold;
+}
+
+.task-table td {
+  vertical-align: middle;
+}
+
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status Badges */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.badge.completed {
+  background-color: #4caf50;
+}
+
+.badge.in-progress {
+  background-color: #ff9800;
+}
+
+.badge.not-started {
+  background-color: #f44336;
+}
+
+/* Priority Badges */
+.priority-low {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.priority-normal {
+  background-color: #ffeb3b;
+  color: #333;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.priority-high {
+  background-color: #f44336;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 400px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Form Buttons */
+.form-buttons,
+.delete-popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button,
+.delete-popup-buttons button {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.delete-popup-buttons button {
+  background-color: #f44336;
+}
+
+.delete-popup-buttons button:hover {
+  background-color: #c62828;
+}
+
+.form-buttons button:hover {
+  background-color: #6200ea;
+}
+
